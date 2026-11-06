@@ -1,0 +1,6 @@
+id	vehicle type (6 police, 7 red Ferrari, 3 black car, 9 off-road)	x	y	z	yaw
+id	type	x	y	z	yaw
+1	7	1090	91	-277	90
+2	3	104.5	5	200.5	90
+3	9	108.5	5	200.5	90
+4	6	112.5	5	200.5	90

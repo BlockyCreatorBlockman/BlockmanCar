@@ -1,0 +1,61 @@
+# 進入游戲初始點
+initPos: [1090, 91, -277]
+
+# 玩家基礎跑速, [1, 1000]
+speedLevel: 300
+
+# 玩家數目限制
+playerMin: 1
+playerMax: 16
+
+# 等待時間，從第一個玩家進入開始计时
+waitTime: 1
+
+# 准备时间
+readyTime: 10
+
+# 游戲縂時間，等待时间结束后开始计时
+gameTime: 1800
+
+# 重生时间
+reviveTime: 1
+
+# Teleport position when the game starts (replaces site.initPoint)
+startCarPos: [1090, 91, -277]
+
+regions:
+    -
+        type: "win"
+        region: [-3, 92, -7, 12, 92, -2]
+        point: 25   # optional bonus score, use 0 for none
+    -
+        type: "score"
+        region: [-3, 92, -7, 12, 92, -2]   # placeholder, give it a different area from the win region
+        point: 25
+
+shops:
+    -
+        type: 1
+        icon: "set:app_shop.json image:app_shop_diamonds_mods"
+        name: "gui.shop.tab.potion"
+        goods:
+            -
+                desc: "item.potion_move_speed.name"
+                price: [519, 0, 5, 1, 5, 5, -1]
+
+ranks:
+    -
+        site: "qms4"
+        npc:
+            name: "budokai.score.rank.name"
+            pos: [5.5, 90, -99.5]
+            dir: 180
+            
+session_npc:
+    -
+    #地图作者
+        initPos: [9.5, 90, -99.5, 180]
+        name: "guidenpc.g1021.01.name"
+        message: "guidenpc_g1021_01"
+        actor: "npc05.actor"
+        session_npc_type: 4
